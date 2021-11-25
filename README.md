@@ -1,6 +1,8 @@
 # NZ COVID Pass PCF Component
 This PCF component utilizes [nzcp-js](https://github.com/vaxxnz/nzcp-js) to provide NZ Covid Pass Validation within a Canvas Power App. 
 
+<img width="521" alt="image" src="https://user-images.githubusercontent.com/7444929/143484767-3bd05296-bae9-4e4a-8712-6bca273dd160.png">
+
 ## Installation
 
  Make sure you have enabled PCF components for Canvas apps in your environment.  For instructions on that [Click Here](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/component-framework-for-canvas-apps)
