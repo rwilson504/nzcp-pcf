@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control namespace="RAW" constructor="NZCOVIDPass" version="0.0.8" display-name-key="NZ COVID Pass" description-key="NZCOVIDPass description" control-type="standard" preview-image="img/preview.png">
+    <property name="QRCode" display-name-key="QR Code" description-key="The contents of the QR Code" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="offlineMode" display-name-key="Offline Mode" description-key="If offline mode is set to true the component will attempt to validate the COVID-19 Pass using a prefetched DID document, otherwise it will attempt to resolve the DID document from the MoH." usage="input" required="false" of-type="TwoOptions" default-value="0" />
+    <property name="testMode" display-name-key="Test Mode" description-key="Allows you to set the control into test mode which will ensure that the sample QR code from https://nzcp.covid19.health.nz/#valid-worked-example will validate." usage="input" required="true" of-type="TwoOptions" default-value="0" />
+    <resources>
+      <code path="index.ts" order="1" />
+      <css path="css/NZCOVIDPass.css" order="1" />
+      <resx path="strings/NZCOVIDPass.1033.resx" version="1.0.0" />
+    </resources>
+    <property name="success" display-name-key="Success" description-key="Verification Outcome" usage="output" required="false" of-type="TwoOptions" />
+    <property name="familyName" display-name-key="Family Name" description-key="Pass holders family name" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="givenName" display-name-key="Given Name" description-key="Pass holders given name" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="dob" display-name-key="Date of Birth" description-key="Pass holders date of birth" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="violationMessage" display-name-key="Violation Message" description-key="Friendly Error Message" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="violationSection" display-name-key="Violation Section" description-key="Section of official specs under violation" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="violationLink" display-name-key="Violation Link" description-key="Link to specifications breached" usage="output" required="false" of-type="SingleLine.Text" />
+    <property name="violationDescription" display-name-key="Violation Description" description-key="Simplified error message" usage="output" required="false" of-type="SingleLine.Text" />
+  </control>
+</manifest>
