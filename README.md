@@ -26,6 +26,8 @@ Make sure you have enabled PCF components for Canvas apps in your environment.  
 - The app will now open Power Apps Canvas Studio.
 - Choose **File** from the ribbon and save the app to your environment.
 
+![InstallSampleApp](https://user-images.githubusercontent.com/7444929/143590905-80e1d233-b0b7-4144-9034-3c10aa1538a7.gif)
+
 ## Control Properties
 | Name | Mode | Type | Description | Default |
 |---|---|---|---| --- |
