@@ -5,6 +5,7 @@ This PCF component utilizes [nzcp-js](https://github.com/vaxxnz/nzcp-js) to prov
 
 ## Installation
 
+### Prerequisite
 Make sure you have enabled PCF components for Canvas apps in your environment.  For instructions on that [Click Here](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/component-framework-for-canvas-apps)
 
 ### Import PCF Component Solution
