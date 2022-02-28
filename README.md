@@ -1,4 +1,6 @@
 # NZ COVID Pass PCF Component
+This [fork of R.Wilsons NZCP-PCF](https://github.com/rwilson504/nzcp-pcf)  is to create an Offline (Non-Premium) version of the compoentfor the [Te Wānanga o Aotearoa](https://www.twoa.ac.nz/) and the rest of Aotearoa/New Zelaland.
+
 This PCF component utilizes [nzcp-js](https://github.com/vaxxnz/nzcp-js) to provide NZ Covid Pass Validation within a Canvas Power App. 
 
 <img width="521" alt="image" src="https://user-images.githubusercontent.com/7444929/143484767-3bd05296-bae9-4e4a-8712-6bca273dd160.png">
