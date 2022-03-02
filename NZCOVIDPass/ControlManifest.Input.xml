@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="RAW" constructor="NZCOVIDPass" version="0.0.10" display-name-key="NZ COVID Pass" description-key="NZCOVIDPass description" control-type="standard" preview-image="img/preview.png">
+  <control namespace="TWoA" constructor="NZCOVIDPass" version="0.0.14" display-name-key="NZ COVID Pass Standard" description-key="NZCOVIDPass offline" control-type="standard" preview-image="img/preview.png">
     <property name="QRCode" display-name-key="QR Code" description-key="The contents of the QR Code" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="offlineMode" display-name-key="Offline Mode" description-key="If offline mode is set to true the component will attempt to validate the COVID-19 Pass using a prefetched DID document, otherwise it will attempt to resolve the DID document from the MoH." usage="input" required="false" of-type="TwoOptions" default-value="0" />
     <property name="testMode" display-name-key="Test Mode" description-key="Allows you to set the control into test mode which will ensure that the sample QR code from https://nzcp.covid19.health.nz/#valid-worked-example will validate." usage="input" required="true" of-type="TwoOptions" default-value="0" />
+    <property name="trustedIssuer" display-name-key="Trusted Issuer" description-key="trusted issuer id" usage="input" required="false" of-type="SingleLine.Text" />
+    <property name="didDocument" display-name-key="DID Document" description-key="DID Document json" usage="input" required="false" of-type="SingleLine.Text" />
     <resources>
       <code path="index.ts" order="1" />
       <css path="css/NZCOVIDPass.css" order="1" />
