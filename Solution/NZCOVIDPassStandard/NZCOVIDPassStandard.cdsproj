@@ -8,7 +8,7 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props')" />
 
   <PropertyGroup>
-    <ProjectGuid>6c382fd4-e4c0-4dd7-aaa6-f0c9b9a1fd3c</ProjectGuid>
+    <ProjectGuid>19311937-df02-421d-856b-f38494b50333</ProjectGuid>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
@@ -41,9 +41,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-      <ProjectReference Include="..\..\nzcp-pcf.pcfproj" />
+    <ProjectReference Include="..\..\nzcp-pcf.pcfproj" />
   </ItemGroup>
-  
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.targets')" />
 

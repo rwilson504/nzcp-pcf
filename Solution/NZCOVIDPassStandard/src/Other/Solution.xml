@@ -2,13 +2,13 @@
 <ImportExportXml version="9.1.0.643" SolutionPackageVersion="9.1" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <!-- Unique Name of Cds Solution-->
-    <UniqueName>NZCOVIDPassOffline</UniqueName>
+    <UniqueName>NZCOVIDPassStandard</UniqueName>
     <LocalizedNames>
       <!-- Localized Solution Name in language code -->
-      <LocalizedName description="NZCOVIDPassOffline" languagecode="1033" />
+      <LocalizedName description="NZCOVIDPassStandard" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.6</Version>
+    <Version>1.0.4</Version>
     <!-- Solution Package Type: Unmanaged(0)/Managed(1)/Both(2)-->
     <Managed>2</Managed>
     <Publisher>
@@ -16,11 +16,11 @@
       <UniqueName>EnlightenDesignsNZ</UniqueName>
       <LocalizedNames>
         <!-- Localized Cds Publisher Name in language code-->
-        <LocalizedName description="EnlightenDesignsNZ" languagecode="1033" />
+        <LocalizedName description="Enlighten Designs NZ" languagecode="1033" />
       </LocalizedNames>
       <Descriptions>
         <!-- Description of Cds Publisher in language code -->
-        <Description description="EnlightenDesignsNZ" languagecode="1033" />
+        <Description description="Enlighten Designs NZ" languagecode="1033" />
       </Descriptions>
       <EMailAddress xsi:nil="true"></EMailAddress>
       <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
