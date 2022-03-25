@@ -35,6 +35,8 @@ Make sure you have enabled PCF components for Canvas apps in your environment.  
 |QR Codekd|Input| SingleLine.Text | The contents of the QR Code||
 |Offline Mode|Input| Boolean | If offline mode is set to true the component will attempt to validate the COVID-19 Pass using a prefetched DID document, otherwise it will attempt to resolve the DID document from the MoH.|false|
 |Test Mode|Input|Boolean|Allows you to set the control into test mode which will ensure that the sample QR code from https://nzcp.covid19.health.nz/#valid-worked-example will validate.|false|
+|Trusted Issuer|Input|SingleLine.Text|Can be used when control is in offline mode to supply trusted issuer id.  DID Document property must also be set in this scenario.||
+|DID Document|Input|SingleLine.Text|Can be used when control is in offline mode to supply static DID document JSON. Trusted Issue property must also be set in this scenario.||
 |Success|Output|Boolean|Provides the outcome of the COVID Pass validation|false|
 |Family Name|Output|SingleLine.Text|Pass holders family name||
 |Given Name|Output|SingleLine.Text|Pass holders given name||
