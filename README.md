@@ -1,4 +1,6 @@
 # NZ COVID Pass PCF Component
+<span style="color:red">**If you are having issues with the control not working within Android or iOS make sure to set the Offline Mode for the component to true.  This will utilize a cached copy of the DID Issuer instead of attempting to retrive it from the web.**</span>
+
 This PCF component utilizes [nzcp-js](https://github.com/vaxxnz/nzcp-js) to provide NZ Covid Pass Validation within a Canvas Power App. 
 
 <img width="521" alt="image" src="https://user-images.githubusercontent.com/7444929/143484767-3bd05296-bae9-4e4a-8712-6bca273dd160.png">
@@ -33,7 +35,7 @@ Make sure you have enabled PCF components for Canvas apps in your environment.  
 | Name | Mode | Type | Description | Default |
 |---|---|---|---| --- |
 |QR Codekd|Input| SingleLine.Text | The contents of the QR Code||
-|Offline Mode|Input| Boolean | If offline mode is set to true the component will attempt to validate the COVID-19 Pass using a prefetched DID document, otherwise it will attempt to resolve the DID document from the MoH.|false|
+|Offline Mode|Input| Boolean | If offline mode is set to true the component will attempt to validate the COVID-19 Pass using a prefetched DID document, otherwise it will attempt to resolve the DID document from the MoH. **Recently changed this to true as default due to CORS restrictions on the nzcp site for obtaining the trusted issuer.**|true|
 |Test Mode|Input|Boolean|Allows you to set the control into test mode which will ensure that the sample QR code from https://nzcp.covid19.health.nz/#valid-worked-example will validate.|false|
 |Trusted Issuer|Input|SingleLine.Text|Can be used when control is in offline mode to supply trusted issuer id.  DID Document property must also be set in this scenario.||
 |DID Document|Input|SingleLine.Text|Can be used when control is in offline mode to supply static DID document JSON. Trusted Issue property must also be set in this scenario.||
